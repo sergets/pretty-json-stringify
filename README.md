@@ -1,17 +1,17 @@
-# pretty-json [![Build Status](https://travis-ci.org/sergets/pretty-json.svg?branch=master)](https://travis-ci.org/sergets/pretty-json)
+# pretty-json-stringify [![Build Status](https://travis-ci.org/sergets/pretty-json.svg?branch=master)](https://travis-ci.org/sergets/pretty-json) [![npm module](https://img.shields.io/npm/v/pretty-json-stringify.svg?style=flat)](https://www.npmjs.com/package/pretty-json-stringify)
 A naive function that adds customizeable indents to JSON data (pretty-prints JSON whitespace).
 You can define whether any object or array should either be collapsed to one line or expanded with one item on each line.
 
 ## Syntax
 ````js
-var JSONString = prettyJSON(objectToStringify, params);
+var JSONString = prettyJSONStringify(objectToStringify, params);
 ````
 
 ## Example
 ````js
-var prettyJSON = require('pretty-json');
+var prettyJSONStringify = require('pretty-json-stringify');
 
-prettyJSON({
+prettyJSONStringify({
     simple : [1, 2, 3],
     tooShort : [4],
     doNotExpand : [5, 6, 7],
