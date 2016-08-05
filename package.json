@@ -1,0 +1,30 @@
+{
+  "name": "pretty-json",
+  "version": "0.0.1",
+  "description": "A function that adds customizeable indents to JSON data",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergets/pretty-json.git"
+  },
+  "keywords": [
+    "json",
+    "stringify",
+    "indents",
+    "pretty",
+    "print"
+  ],
+  "author": "Sergey Tsibulskiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergets/pretty-json/issues"
+  },
+  "homepage": "https://github.com/sergets/pretty-json#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1"
+  }
+}
