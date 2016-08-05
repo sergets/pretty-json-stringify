@@ -7,7 +7,7 @@ describe('pretty-json', function() {
         var testData = {
             a : function() {},
             b : undefined,
-            c : Symbol('abc'),
+            c : typeof Symbol == 'function' && Symbol('abc'),
             d : {
                 e : function() {},
                 f : -Infinity,
