@@ -59,4 +59,10 @@ function stringify(object, params, level, index) {
     return bra + spaceInside + (shouldExpand? params.tab : '') + children.join(joiner) + spaceInside + ket;
 }
 
-module.exports = stringify;
+if (typeof module == 'object' && typeof module.exports == 'object') {
+    module.exports = stringify;
+} else if (typeof define == 'function') {
+    define(function() { return stringify; });
+} else { 
+    (window || global).prettyJSONStringify = stringify;
+}
